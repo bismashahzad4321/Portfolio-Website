@@ -74,6 +74,26 @@ body {
     color: #34b7a7;
 
 }
+@media screen and (max-width: 720px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
+@media screen and (max-width: 320px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
 
 .heroSection {
     background-image: url(assets/HeroSection/hero-bg.jpg);
@@ -127,6 +147,17 @@ body {
     background-color: #2ca193;
 }
 
+@media screen and (max-width:720px) {
+    .heroContentSection {
+        height: 50%;
+    }
+    .heroContentSection h1{
+        font-size: 18px;
+    }
+    .heroContentSection p {
+        font-size: 14px;
+    }
+}
 .footer {
     display: flex;
     flex-direction: column;
@@ -462,4 +493,55 @@ body {
         width: 40px;
         height: 2px;
     }
+}
+
+.tesminialsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+.tesminialsSection img {
+    width: 100px;
+    border-radius: 100%;
+}
+
+.tesminialsSection h3 {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.tesminialsSection p {
+    font-size: 16px;
+    color: #444444;
+    font-family: 'roboto', serif;
+    font-weight: 300;
+}
+
+.fiveStar img {
+    border-radius: 0px;
+}
+
+@media screen and (max-width:320px) {
+    .tesminialsSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+}
+.resumeRow{
+    display: flex;
+    flex-direction: row;
+}
+.resumeContentSection{
+display: flex;
+flex-direction: column;
 }
