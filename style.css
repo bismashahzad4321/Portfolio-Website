@@ -74,6 +74,7 @@ body {
     color: #34b7a7;
 
 }
+
 @media screen and (max-width: 720px) {
     .header {
         flex-direction: column;
@@ -82,13 +83,15 @@ body {
     }
 
 }
+
 @media screen and (max-width: 320px) {
     .header {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-    .navbar ul{
+
+    .navbar ul {
         display: flex;
         flex-direction: column;
     }
@@ -151,13 +154,16 @@ body {
     .heroContentSection {
         height: 50%;
     }
-    .heroContentSection h1{
+
+    .heroContentSection h1 {
         font-size: 18px;
     }
+
     .heroContentSection p {
         font-size: 14px;
     }
 }
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -537,11 +543,116 @@ body {
         padding-left: 4px;
     }
 }
-.resumeRow{
+
+.resumeRow {
     display: flex;
     flex-direction: row;
+    padding-right: 150px;
+    padding-left: 150px;
+    gap: 50px;
+    justify-content: space-evenly;
 }
-.resumeContentSection{
-display: flex;
-flex-direction: column;
+
+.resumeContentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: start;
+}
+
+.resumeColumn {
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    padding-top: 0px;
+}
+
+.resumeContentSection h1 {
+    font-size: 26px;
+    font-family: 'raleway', serif;
+    color: #2a2929;
+    margin: 0;
+    line-height: 3rem;
+}
+
+.resumeContentSection h2 {
+    font-size: 18px;
+    font-family: 'raleway', serif;
+   color: #34b7a7;
+    margin: 0;
+    line-height: 2rem;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    padding-top: 8px;
+}
+
+.resumeContentSection p {
+    font-size: 16px;
+    font-family: 'roboto', serif;
+    color: #444444;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.25rem;
+    padding-right: 90px;
+}
+
+.resumeContentSection h3 {
+    font-family: 'roboto', serif;
+    color: #565555;
+    font-size: 16px;
+    margin: 0;
+}
+
+.resumeColumn ul {
+    justify-content: start;
+    color: #444444;
+    font-family: 'roboto', serif;
+    align-items: start;
+
+}
+
+.resumeColumn ul li {
+    color: #444444;
+    font-family: 'roboto', serif;
+    font-size: 15px;
+    margin: 0;
+    text-align: start;
+}
+
+.resumeColumn ul {
+    justify-content: start;
+    color: #444444;
+    font-family: 'roboto', serif;
+}
+
+.resumeColumn ul li {
+    color: #444444;
+    font-family: 'roboto', serif;
+    font-size: 15px;
+    margin: 0;
+}
+
+.resumeContentSection {
+    gap: 0px;
+    margin: 0;
+}
+@media screen and (max-width:720px) {
+    .resumeRow{
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (max-width:320px) {
+    .resumeRow{
+        display: flex;
+        flex-direction: column;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .resumeColumn p{
+padding: 0;
+    }
 }
