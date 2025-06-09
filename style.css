@@ -47,7 +47,10 @@ body {
     font-family: 'poppins', serif;
     cursor: pointer;
 }
-
+.navbar ul li a{
+    text-decoration: none;
+    color: #444444;
+}
 .navbar ul li:hover {
     color: #34b7a7;
     text-decoration: underline;
