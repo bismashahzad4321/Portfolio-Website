@@ -12,6 +12,8 @@ body {
     align-items: center;
     padding-right: 30px;
     padding-left: 30px;
+    position: sticky;
+    box-shadow: 0px;
 }
 
 .siteName {
@@ -19,7 +21,7 @@ body {
     margin: 0;
     font-weight: 300;
     text-transform: uppercase;
-    color: black;
+    color: rgb(55, 55, 55);
     font-family: 'raleway', serif;
 }
 
@@ -30,13 +32,31 @@ body {
 }
 
 .navbar ul li {
-    padding: 8px;
-    font-size: 17px;
+    padding: 13px;
+    font-size: 14px;
     font-weight: 500;
+    color: #444444;
+    font-family: 'poppins', serif;
+    cursor: pointer;
 }
-.headerSocialIcon{
+
+.navbar ul li:hover {
+    color: #34b7a7;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.headerSocialIcon {
     display: flex;
 }
-.headerSocialIcon i{
+
+.headerSocialIcon i {
     padding: 6px;
+    color: #8c8c8c;
+    cursor: pointer;
+}
+
+.headerSocialIcon i:hover {
+    color: #34b7a7;
+
 }
